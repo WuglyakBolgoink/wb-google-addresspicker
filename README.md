@@ -1,13 +1,13 @@
-# Angular directive: Base64 File Input
+# Angular directive: Address Picker
 
-This is a directive for [angular](https://github.com/angular/angular.js) (based on [@adonespitogo](https://github.com/adonespitogo/angular-base64-upload) project).
-It will process a file input returning a base64 string and details of the file.
+This is a directive for [angular](https://github.com/angular/angular.js) (based on [jQuery Address Picker](https://github.com/bygiro/jQuery-AddressPicker-ByGiro) project).
+It will convert a simple input text into a fully features google maps address picker with typeahead..
 
 
 ### Install with Bower
 
 ```bash
-$ bower install angular angular-base64-file-input --save
+$ bower install angular angular-address-picker --save
 ```
 
 check the demo
