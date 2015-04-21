@@ -1,0 +1,35 @@
+{
+  "name": "angular-address-picker",
+  "version": "v0.0.1",
+  "authors": [
+    "ByGiro <girotomaselli@gmail.com>"
+  ],
+  "contributors": [],
+  "main": [
+	"dist/angular-address-picker.js",
+	"dist/angular-address-picker.min.js"
+  ],
+  "description": "Angular directive to convert a simple input text into a fully featured google maps address picker",
+  "keywords": [
+    "AngularJs",
+    "form",
+    "ByGiro",
+    "google maps",
+    "address picker"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": ">=1.2.x"
+  },
+  "devDependencies": {
+    "chai": "~1.9.1",
+    "mocha": "~1.21.4"
+  }
+}

@@ -1,0 +1,40 @@
+<html ng-app="demoApp">
+<head>
+
+<!--	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> -->
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.min.js"></script>
+	<script src="http://maps.google.com/maps/api/js?sensor=false&language=en"></script>
+	<script src="js/ui-bootstrap-tpls-0.12.1.min.js"></script>
+	<script src="js/jquery.addressPickerByGiro.js"></script>
+	<script src="../dist/angular-address-picker.js"></script>
+	<script src="demo.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="demo.css" />
+  
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+</head>
+<body ng-controller="demoCtrl">
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<h1>Angular directive: Address Picker ByGiro</h1>
+			<p>This is a directive to convert a simple input text into a fully featured google maps address picker</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<input class="col-lg-7" type="text" autocomplete="off" data-bgap-address="address" data-bgap-options="addressPickerOptions" data-bgap-address-picker>
+		</div>
+		<div class="col-md-6">
+			<pre>Model: {{address | json}}</pre>
+		</div>
+	</div>
+</div>
+</body>
+
+</html>
