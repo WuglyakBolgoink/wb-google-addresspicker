@@ -33,10 +33,11 @@ angular.module('ByGiro.addressPicker', ['ui.bootstrap'])
 			}
 			
 			bg(element).addressPickerByGiro(options).on('selected.addressPickerByGiro', function(eve, data){
-				scope.address = data.cleanData;
 				
 				// update the scope
-				scope.$apply();
+				scope.$apply(function(){
+					scope.address = data.cleanData;					
+				});
 			});
 			
 			// we get a promise
