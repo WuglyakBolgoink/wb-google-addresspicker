@@ -20,7 +20,7 @@ angular.module('ByGiro.addressPicker', ['ui.bootstrap'])
 
 		function link( scope, element, attributes, _, transclude ) {
 			
-		   transclude(
+			transclude(
 				function( content ) {
 					element.append( content );
 				}
@@ -35,9 +35,14 @@ angular.module('ByGiro.addressPicker', ['ui.bootstrap'])
 			bg(element).addressPickerByGiro(options).on('selected.addressPickerByGiro', function(eve, data){
 				
 				// update the scope
-				scope.$apply(function(){
-					scope.address = data.cleanData;					
-				});
+				var phase = scope.$root.$$phase;
+				if (phase == '$apply' || phase == '$digest') {
+					scope.address = data.cleanData;	
+				} else {
+					scope.$apply(function(){
+						scope.address = data.cleanData;					
+					});
+				}
 			});
 			
 			// we get a promise
