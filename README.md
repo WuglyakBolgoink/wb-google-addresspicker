@@ -7,7 +7,7 @@ It will convert a simple input text into a fully featured google maps address pi
 ### Install with Bower
 
 ```bash
-$ bower install angular angular-address-picker --save
+$ bower install angular angular-addresspicker --save
 ```
 
 check the demo

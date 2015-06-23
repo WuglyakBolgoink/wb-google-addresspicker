@@ -31,16 +31,20 @@ angular.module('ByGiro.addressPicker', ['ui.bootstrap'])
 			if(attributes.bgapOptions){
 				options = scope.$parent[attributes.bgapOptions];
 			}
-			
+
 			bg(element).addressPickerByGiro(options).on('selected.addressPickerByGiro', function(eve, data){
+				var value = data.cleanData;
+				if(!options.addressComponents){
+					value = data.cleanData.formatted_address;
+				}
 				
 				// update the scope
 				var phase = scope.$root.$$phase;
 				if (phase == '$apply' || phase == '$digest') {
-					scope.address = data.cleanData;	
+					scope.address = value;	
 				} else {
 					scope.$apply(function(){
-						scope.address = data.cleanData;					
+						scope.address = value;
 					});
 				}
 			});
