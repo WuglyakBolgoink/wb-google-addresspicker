@@ -6,8 +6,8 @@
   ],
   "contributors": [],
   "main": [
-	"dist/angular-address-picker.js",
-	"dist/angular-address-picker.min.js"
+    "dist/angular-address-picker.js",
+    "dist/angular-address-picker.min.js"
   ],
   "description": "Angular directive to convert a simple input text into a fully featured google maps address picker",
   "keywords": [
@@ -26,7 +26,9 @@
     "tests"
   ],
   "dependencies": {
-    "angular": ">=1.2.x"
+    "angular": ">=1.2.x",
+    "jquery-addresspicker": "*",
+    "angular-bootstrap": "~0.13.0"
   },
   "devDependencies": {
     "chai": "~1.9.1",

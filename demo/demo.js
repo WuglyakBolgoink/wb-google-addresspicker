@@ -4,7 +4,8 @@
 			$scope.address = {};	
 
 			$scope.addressPickerOptions = {
-				distanceWidget: true
+				distanceWidget: true,
+				addressComponents: true
 			};
 		}
 	]);
