@@ -1,4 +1,4 @@
-/*! angular-address-picker - v0.0.1 - 18 april 2015
+/*! angular-address-picker - v0.0.6
 * Copyright (c) G. Tomaselli <girotomaselli@gmail.com> 2015; Licensed  
 */
 angular.module('ByGiro.addressPicker', ['ui.bootstrap'])
