@@ -2,10 +2,10 @@
 <head>
 
 <!--	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> -->
-	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.min.js"></script>
 	<script src="http://maps.google.com/maps/api/js?sensor=false&language=en"></script>
+	<script src="../bower_components/angular/angular.js"></script>
 	<script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
-	<script src="../bower_components/jquery-addresspicker/dist/jquery.addressPickerByGiro.min.js"></script>
+	<script src="../bower_components/jquery-addresspicker/dist/jquery.addressPickerByGiro.js"></script>
 	<script src="../dist/angular-address-picker.js"></script>
 	<script src="demo.js"></script>
 
@@ -28,7 +28,7 @@
 	</div>
 	<div class="row">
 		<div class="col-md-6">
-			<input class="col-lg-7" type="text" autocomplete="off" data-bgap-address="address" data-bgap-options="addressPickerOptions" data-bgap-address-picker>
+			<input class="col-lg-7" type="text" autocomplete="off" ng-model="address" data-bgap-options="addressPickerOptions" data-bgap-address-picker>
 		</div>
 		<div class="col-md-6">
 			<pre>Model: {{address | json}}</pre>

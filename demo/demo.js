@@ -1,7 +1,7 @@
 (function() {
 	angular.module('demoApp', ['ByGiro.addressPicker']).controller('demoCtrl', [
 		'$scope','$window', function($scope, $window) {
-			$scope.address = {};	
+			$scope.address = '';	
 
 			$scope.addressPickerOptions = {
 				distanceWidget: true,
