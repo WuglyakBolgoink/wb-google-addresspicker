@@ -1,6 +1,6 @@
 {
   "name": "angular-address-picker",
-  "version": "v0.0.7",
+  "version": "v0.0.8",
   "authors": [
     "ByGiro <girotomaselli@gmail.com>"
   ],
@@ -27,8 +27,7 @@
   ],
   "dependencies": {
     "angular": ">=1.2.x",
-    "jquery-addresspicker": "*",
-    "angular-bootstrap": "~0.13.0"
+    "jquery-addresspicker": "*"
   },
   "devDependencies": {
     "chai": "~1.9.1",

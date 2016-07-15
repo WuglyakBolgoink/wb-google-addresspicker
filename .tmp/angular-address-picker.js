@@ -8,6 +8,8 @@ angular.module('ByGiro.addressPicker', ['ui.bootstrap'])
 			$element.addressPickerByGiro($scope.options)
 			.on('selected.addressPickerByGiro', function(eve, data){
 				
+				if(!data.cleanData) return;
+				
 				if($attrs.ngModel){
 					$scope.ngModel = data.cleanData.formatted_address;
 				}
