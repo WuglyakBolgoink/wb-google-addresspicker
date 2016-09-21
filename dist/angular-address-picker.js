@@ -1,10 +1,11 @@
 /*! angular-address-picker - v0.0.7
 * Copyright (c) G. Tomaselli <girotomaselli@gmail.com> 2015; Licensed  
 */
-angular.module('ByGiro.addressPicker', ['ui.bootstrap'])
+angular.module('ByGiro.addressPicker', [])
 .directive('bgapAddressPicker', ['$window','$parse','$compile', function ($window, $parse, $compile) {
 	
 	contrFunction = ['$scope', '$timeout', '$element', '$attrs', '$parse', function($scope, $timeout, $element, $attrs, $parse){
+			
 			$element.addressPickerByGiro($scope.options)
 			.on('selected.addressPickerByGiro', function(eve, data){
 				
