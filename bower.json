@@ -1,36 +1,36 @@
 {
-  "name": "angular-address-picker",
-  "version": "v0.0.8",
-  "authors": [
-    "ByGiro <girotomaselli@gmail.com>"
-  ],
-  "contributors": [],
-  "main": [
-    "dist/angular-address-picker.js",
-    "dist/angular-address-picker.min.js"
-  ],
-  "description": "Angular directive to convert a simple input text into a fully featured google maps address picker",
-  "keywords": [
-    "AngularJs",
-    "form",
-    "ByGiro",
-    "google maps",
-    "address picker"
-  ],
-  "license": "MIT",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "angular": ">=1.2.x",
-    "jquery-addresspicker": "*"
-  },
-  "devDependencies": {
-    "chai": "~1.9.1",
-    "mocha": "~1.21.4"
-  }
+    "name": "wb-google-addresspicker",
+    "version": "1.0.1",
+    "author": "G. Tomaselli <girotomaselli@gmail.com>",
+    "contributors": [
+        {
+            "name": "Wuglyak Bolgoink",
+            "email": "info@cyberkatze.de"
+        }
+    ],
+    "main": "dist/wb-google-addresspicker.min.js",
+    "description": "Angular directive to convert a simple input text into a fully featured google maps address picker",
+    "keywords": [
+        "ng",
+        "angular",
+        "directive",
+        "google",
+        "picker",
+        "address",
+        "google maps",
+        "maps"
+    ],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "angular": ">=1.2.x",
+        "jquery-addresspicker": "*"
+    },
+    "devDependencies": {}
 }
