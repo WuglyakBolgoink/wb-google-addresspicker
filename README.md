@@ -37,9 +37,68 @@ bower install wb-google-addresspicker --save
     http://maps.google.com/maps/api/js?key=<MY_API_KEY>&language=en
     ```
 
+### Options (see [jquery-addresspicker](https://github.com/bygiro/jquery-addressPicker-ByGiro))
+
+```js
+{
+  appendAddressString: "",
+  draggableMarker: true,
+  regionBias: null,
+  bounds: '',
+  componentsFilter:'',
+  updateCallback: null,
+  reverseGeocode: false,
+  autocomplete: 'default',
+  mapOptions: {
+      zoom: 5,
+      center: new google.maps.LatLng(46, 2),
+      scrollwheel: false,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+  },
+  elements: {
+      map: false,
+      lat: false,
+      lng: false,
+      street_number: false,
+      route: false,
+      locality: false,
+      administrative_area_level_3: false,
+      administrative_area_level_2: false,
+      administrative_area_level_1: false,
+      country: false,
+      postal_code: false,
+      type: false
+  },
+  autocomplete: '' // could be autocomplete: "bootstrap" to use bootstrap typeahead autocomplete instead of jQueryUI
+}
+```
+
+
 ### Demo
 
-> Add module `'WB.GAddressPicker'` as dependency
+```html
+<div class="row">
+        <div class="col-md-6">
+            <p>
+                <input class="form-control"
+                       type="text"
+                       autocomplete="off"
+                       data-ng-model="ctrl.address"
+                       data-gap-model="ctrl.addressFull"
+                       data-gap-options="ctrl.addressPickerOptions"
+                       data-wb-google-addresspicker>
+            </p>
+        </div>
+        <div class="col-md-6">
+                <pre>Address: {{ctrl.address | json}}</pre>
+            <p>
+                <pre>AddressFull: {{ctrl.addressFull | json}}</pre>
+            </p>
+        </div>
+    </div>
+```
+
+> Add angular module `'WB.GAddressPicker'` as dependency in your app
  
 ```js
 (function() {
