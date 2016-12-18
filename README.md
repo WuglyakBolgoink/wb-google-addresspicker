@@ -2,6 +2,8 @@
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/WuglyakBolgoink/wb-google-addresspicker/blob/master/LICENSE)
 
+[![NPM](https://nodei.co/npm/wb-google-addresspicker.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/wb-google-addresspicker/)
+
 ---
 
 ## Description
