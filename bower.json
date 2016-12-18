@@ -8,7 +8,7 @@
             "email": "info@cyberkatze.de"
         }
     ],
-    "main": "dist/wb-google-addresspicker.min.js",
+    "main": "dist/wb-google-addresspicker.js",
     "description": "Angular directive to convert a simple input text into a fully featured google maps address picker",
     "keywords": [
         "ng",
