@@ -13,10 +13,7 @@
     "type": "git",
     "url": "git://github.com/WuglyakBolgoink/wb-google-addresspicker.git"
   },
-  "main": [
-    "dist/wb-google-addresspicker.js",
-    "dist/wb-google-addresspicker.min.js"
-  ],
+  "main": "dist/wb-google-addresspicker.min.js",
   "license": "MIT",
   "description": "Angular directive to convert a simple input text into a fully featured google maps address picker",
   "peerDependencies": {
