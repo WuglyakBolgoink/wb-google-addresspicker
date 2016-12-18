@@ -1,5 +1,4 @@
 # Angular directive: wb-google-addresspicker
-=============================================
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/WuglyakBolgoink/wb-google-addresspicker/blob/master/LICENSE)
 
