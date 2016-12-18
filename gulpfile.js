@@ -2,37 +2,26 @@
     'use strict';
 
     var gulp = require('gulp');
-    var concat = require('gulp-concat');
-    var template = require('gulp-ng-templates');
-    var rename = require('gulp-rename');
-    var ngAnnotate = require('gulp-ng-annotate');
-    var uglify = require('gulp-uglify');
-    var gulp = require('gulp');
-    var git = require('gulp-git');
-    var bump = require('gulp-bump');
-    var filter = require('gulp-filter');
-    var minifyHtml = require("gulp-minify-html");
+
+    var plugins = require('gulp-load-plugins')();
 
     //Build Vars
-    var finalName = 'angular-address-picker';
-
+    var directive = 'wb-google-addresspicker';
 
     gulp.task('default', ['build']);
 
-    // Then save the main provider in the same tmp dir
-    gulp.task('mkSrc', function() {
+    gulp.task('build', function() {
         return gulp.src('./src/*.js')
-        // .pipe(concat('all.js'))
-            .pipe(gulp.dest('./.tmp/'));
-    });
-
-    gulp.task('build', ['mkSrc'], function() {
-        return gulp.src('./.tmp/*.js')
-            .pipe(ngAnnotate())
-            .pipe(concat(finalName + ".js"))
+            .pipe(plugins.ngAnnotate({
+                single_quotes: true,
+                add: true
+            }))
+            .pipe(plugins.stripDebug())
+            .pipe(plugins.stripComments())
+            .pipe(plugins.concat(directive + '.js'))
             .pipe(gulp.dest('./dist'))
-            .pipe(uglify())
-            .pipe(rename({
+            .pipe(plugins.uglify())
+            .pipe(plugins.rename({
                 extname: '.min.js'
             }))
             .pipe(gulp.dest('./dist'));
