@@ -1,28 +1,26 @@
-
 .table {
-	margin-top: 20px;
-    table-layout:fixed;
+    margin-top: 20px;
+    table-layout: fixed;
 }
 
 .table th {
-	width: 150px;
+    width: 150px;
 }
 
 .table td {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .preview-extension {
-	font-weight: bold;
-	font-style: italic;
-	color: green;
-	font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    color: #080;
+    font-size: 30px;
 }
 
-.preview-image img{
-	max-width: 200px;
-	max-height: 200px;
+.preview-image img {
+    max-width: 200px;
+    max-height: 200px;
 }
